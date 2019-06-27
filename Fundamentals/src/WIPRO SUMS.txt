@@ -1,0 +1,535 @@
+WIPRO SUMS:
+
+1)Technologies:
+
+public class Cmdarg1 {
+
+	public static void main(String[] args) {
+		System.out.println(args[0]+" "+"Technologies"+" "+args[1]);
+
+	}
+
+}
+
+**************************************************************************************************************************************************************
+2)welcome:
+
+public class welcome {
+
+	public static void main(String[] args) {
+		int i;
+        for(i=0;i<args.length-0;i++)
+        	 System.out.print(" welcome ");
+             System.out.print(args[0]);
+    
+
+	}
+
+}
+********************************************************************************************************************************************************************
+3)Add:
+public class add {
+
+	public static void main(String[] args) {
+		 int x,y,s;
+		 
+         x=Integer.parseInt(args[0]);
+         y=Integer.parseInt(args[1]);
+
+         s=x+y;
+         System.out.println("sum of " + x + " and " + y +" is " +s);
+   
+	
+
+	}
+
+}
+*****************************************************************************************************************************************************************************
+4)POSNEG:
+
+public class Hello1 
+{
+    public static void main(String[] args) 
+    {
+        int n;
+       
+        System.out.print("Enter the number you want to check:");
+        n=Integer.parseInt(args[0]);
+        if(n > 0)
+        {
+        	
+            System.out.println("The given number "+n+" is Positive");
+        }
+        else if(n < 0)
+        {
+            System.out.println("The given number "+n+" is Negative");
+        }
+        else
+        {
+            System.out.println("The given number "+n+" is  ");
+        }
+    }
+}
+****************************************************************************************************************************************************
+5)ODD EVEN:
+
+public class oddeven {
+
+	public static void main(String[] args) {
+		int n;
+        
+        System.out.print("Enter the number you want to check:");
+        n=Integer.parseInt(args[0]);
+        if(n%2== 0)
+        {
+        	
+            System.out.println("The given number "+n+" is even");
+        }
+        else
+        {
+            System.out.println("The given number "+n+" is odd");
+        }
+
+	}
+
+}
+****************************************************************************************************************************************************
+6)ARGUMENTS:
+
+public class argument {
+
+	public static void main(String[] args) {
+		
+		   if (args.length ==0)
+		            {
+		            System.out.println("No Values");
+		            
+		      }
+		        else
+		        {
+int i;
+		            for(i = 0; i<args.length-1;i++)    
+		                System.out.print(args[i]+",");
+		            System.out.print(args[i]);
+		        }
+		        }
+		        }
+**************************************************************************************************************************************************
+7)ALPHA:
+
+public class alpha {
+
+	public static void main(String[] args) {
+		
+
+        char item1='N';
+        char item2='M';
+        if (item1>item2)
+            System.out.println(item2+" , "+item1);
+       
+        else
+            System.out.println(item1+" , "+item2);
+    }
+    
+	}
+***********************************************************************************************************************************************
+8)ADSC:
+
+
+
+public class argu {
+
+	public static void main(String[] args) {
+		
+  char ch='7' ;
+ 
+  if(ch>='a' && ch<='z')
+  {
+	  System.out.print("Alphabet");
+	  
+  }
+  else if(ch>='0' && ch<='9')
+  {
+	  System.out.print("Digits");
+  }
+  else
+  {
+	  System.out.print("Special Characters");
+  }
+	}
+}
+**************************************************************************************************************************************************
+9)GENDER:
+
+public class gender {
+
+	public static void main(String[] args) {
+		String gender=args[0];
+		int age=Integer.parseInt(args[1]);
+		{ 
+			if(gender.equals("female"))
+			{
+			 if(age>=1 && age<=58) {
+				System.out.println("the percentage of interest is 8.2%");	
+				}
+			 if(age>=59 && age<=100) {
+				System.out.println("the percentage of interest is 9.2%");	
+				}
+			}
+		
+		  if(gender.equals("male"))
+		 {
+			 if(age>=1 && age<=58) {
+				System.out.println("the percentage of interest is 8.4%");	
+				}
+			 if(age>=59 && age<=100) {
+				System.out.println("the percentage of interest is 10.5%");	
+				}
+			}
+		 }
+      }
+	}
+***********************************************************************************
+10)UP TO LOW:
+
+public class upplow2 {
+
+	public static void main(String[] args) {
+	
+		char ch='B',ch1='b';
+		if((ch1>='a'&&ch1<='z')||(ch>='A'&& ch<='Z'))
+				{
+			System.out.println(ch1+ " ->" + ch);
+			
+
+	}
+		
+		else if((ch>='A'&& ch<='Z')||(ch>='a'&&ch<='z')) {
+			System.out.println(ch+"->"+ch1);
+			
+
+}}}
+
+
+
+***************************************************************************************************************************************************
+11)COLOURS:
+
+
+public class colour {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char colour = 'B';
+		switch(colour) {
+		case 'R':
+		System.out.println("Red");
+		break;
+		case 'B':
+		System.out.println("Blue");
+		break;
+		case 'G':
+		System.out.println("Green");
+		break;
+		case 'O':
+		System.out.println("Orange");
+		break;
+		case 'Y':
+		System.out.println("Yellow");
+		break;
+		case 'W':
+		System.out.println("White");
+		break;
+		default :
+		        System.out.println("Invalid Code");
+		}
+		}
+	}
+**********************************************************************************************************************************************
+12)MONTHS:
+
+import javax.swing.JOptionPane;
+
+public class month {
+
+	public static void main(String[] args) {
+		 int num = Integer.parseInt (JOptionPane.showInputDialog ("Enter any number equal to or between 1-12 to display the month"));
+
+		    switch (num)
+		    {
+		    case 1:
+		        System.out.println ("The name of month number 1 is January");
+		        break;
+		    case 2:
+		        System.out.println ("The name of month number 2 is February");
+		        break;
+		    case 3:
+		        System.out.println ("The name of month number 3 is March");
+		        break;
+		    case 4:
+		        System.out.println ("The name of month number 4 is April");
+		        break;
+		    case 5:
+		        System.out.println ("The name of month number 5 is May");
+		        break;
+		    case 6:
+		        System.out.println ("The name of month number 6 is June");
+		        break;
+		    case 7:
+		        System.out.println ("The name of month number 7 is July");
+		        break;
+		    case 8:
+		        System.out.println ("The name of month number 8 is August");
+		        break;
+		    case 9:
+		        System.out.println ("The name of month number 9 is September");
+		        break;
+		    case 10:
+		        System.out.println ("The name of month number 10 is October");
+		        break;
+		    case 11:
+		        System.out.println ("The name of month number 11 is November");
+		        break;
+		    case 12:
+		        System.out.println ("The name of month number 12 is December");
+		        break;
+		        default:
+		            System.out.println ("You have entered an invalid number");
+		        }
+		    } 
+		
+
+	}
+***********************************************************************************************************************************************
+13)NUMBERS:
+
+public class numbers {
+
+	public static void main(String[] args) {
+		
+		
+		    {
+		        for(int i = 1; i <= 10; i++) {
+		        	if( i <=10){
+						System.out.print(i + " ");
+		        	}
+		    }
+	}
+	}
+	}
+
+
+
+***********************************************************************************************************************************************
+14)EVEN NUM BETWEEN 23 AND 57:
+
+
+ class even {
+ 
+	public static void main(String[] args) {
+		
+		
+		int limit = 57;
+		
+		System.out.println("Printing Even numbers between 23 and " + limit);
+		
+		for(int i=23; i <= limit; i++){
+			
+			
+			if( i % 2 == 0){
+				System.out.print(i + " ");
+			}
+		}
+	}
+}
+******************************************************************************************************************************************
+
+15)PRIME:
+
+public class prime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num = 7;
+        boolean flag = false;
+        for(int i = 2; i <= num/2; ++i)
+        {
+            if(num % i == 0)
+            {
+                flag = true;
+                break;
+            }
+        }
+        if (!flag)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");
+    }
+
+	}
+***************************************************************************************************************************************
+
+16)PRIME NUMBERS BTW 10 AND 99:
+
+
+
+public class interval {
+
+	public static void main(String[] args) {
+	
+		int count=0;
+		int i,j;
+		for(i=10;i<99;i++)
+		{
+		count=0;
+		for(j=1;j<=i;j++) {
+		if(i%j==0) {
+		count=count+1;
+		}
+		}
+		if(count==2)
+		{
+		System.out.println(i);
+		}
+		}
+		}
+		}
+*****************************************************************************************************************************************
+17)PRIME OR COMPOSITE:
+
+public class primorcomp {
+
+	public static void main(String[] args) {
+	int n=1,count=0,i=1;
+	if(n==1) {
+		System.out.println("neither composite nor prime.");	
+	}
+	else if(n%i==0) {
+		i++;
+		count ++;
+	}
+	if(count<=2) {
+		System.out.println("prime number");
+	}
+	else if(n%2==0) {
+			
+		System.out.println("composite number");
+		
+		
+	}
+	
+
+	}
+
+}
+
+
+******************************************************************************************************************************************
+
+18)DIGIT SUM:
+
+public class dsum {
+
+	public static void main(String[] args) {
+	
+	    int n,sum;
+	    n=Integer.parseInt(args[0]);
+System.out.println("Enter a number ");
+     
+for(sum=0 ;n!=0 ;n/=10)
+{
+sum+=n%10;
+}
+System.out.println("Sum of digits of a number is "+sum);               	  
+}
+}
+******************************************************************************************************************************************
+
+19)PATTERN:
+
+public class pattern {
+
+	public static void printStars(int n)  {
+		// TODO Auto-generated method stub
+
+        int i, j; 
+  
+       
+        for(i=0; i<n; i++) 
+        { 
+     
+            for(j=0; j<=i; j++) 
+            { 
+               
+                System.out.print("* "); 
+            } 
+  
+          
+            System.out.println(); 
+        } 
+   } 
+  
+    public static void main(String args[]) 
+    { 
+        int n = 3; 
+        printStars(n); 
+    } 
+
+}
+****************************************************************************************************************************************
+
+20)REVERSE:
+
+
+public class reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int num = 1234, reversed = 0;
+        while(num != 0) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+        System.out.println("Reversed Number: " + reversed);
+    }
+
+	}
+*****************************************************************************************************************************************
+
+21)PALINDROME:
+
+
+public class reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int num = 1234, reversed = 0;
+        while(num != 0) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+        System.out.println("Reversed Number: " + reversed);
+    }
+
+	}
+****************************************************************************************************************************************
+
+22)DIVISIBLE :
+
+public class divide {
+
+	public static void main(String[] args) {
+	int	i=1;
+	while(i>=1&&i<=190) {
+		i++;
+		if((i%2==0)&&(i%3==0)&&(i%5==0)) {
+			System.out.println(i);
+		}
+	}
+
+	}
+
+}
+
